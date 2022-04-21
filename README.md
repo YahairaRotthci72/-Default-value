@@ -1,0 +1,2 @@
+# -Default-value
+Check($obj)  PurgeVar($obj)  _Check($obj)  Func PurgeVar(ByRef $vVar)     Switch VarGetType($vVar)         Case "Array"             Local $aEmpty[0]             $vVar = $aEmpty ; Default value of an array.         Case "Binary"             $vVar = Binary(0) ; Default value of binary.         Case "Bool"             $vVar = False ; Default value of a boolean.         Case "Double"             $vVar = 0.0 ; Default value of a double.
